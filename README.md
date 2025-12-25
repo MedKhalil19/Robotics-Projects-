@@ -15,7 +15,7 @@ Focuses on wireless control, motor driving, and rugged mechanical design.
 
 **Technologies:** ESP32 · Bluetooth · Robotics · Embedded Systems
 
-📁 Folder: `all terrain robot`
+📁 Folder: `All Terrain Robot`
 
 ---
 
@@ -25,7 +25,7 @@ Demonstrates real-time sensor processing and closed-loop motor control.
 
 **Technologies:** Arduino · IR Sensors · PD Control · PROTEUS · SOLIDWORKS
 
-📁 Folder: `line follower `
+📁 Folder: `Line Follower Robot`
 
 ---
 
@@ -35,7 +35,7 @@ The original firmware was **modified and adapted** to enable RC-based control an
 
 **Technologies:** STM32 · Hoverboard Controller · RC Remote · Motor Control · Robotics
 
-📁 Folder: `fighter robot`
+📁 Folder: `Fighter Robot`
 
 ---
 
@@ -45,7 +45,7 @@ Combines embedded systems with computer vision and mechanical design.
 
 **Technologies:** ESP32-CAM · YOLOv3 · Arduino IDE · SolidWorks · Robotics
 
-📁 Folder: `surveillance robot`
+📁 Folder: `Surveillance Robot`
 
 ---
 
