@@ -1,44 +1,75 @@
-# 🤖 Line Follower Robot
+# 🤖 Robotics Projects Portfolio
 
-## 📌 Project Overview
-This project involves the **design and development of an autonomous line follower robot** capable of accurately following a predefined trajectory using **infrared (IR) sensors**.
+## 📌 Repository Overview
+This repository contains a collection of **robotics and embedded systems projects** developed as part of hands-on engineering work in **mechatronics, embedded programming, control systems, and AI-based robotics**.
 
-The robot processes real-time sensor data to adjust its motion dynamically, ensuring stable and precise path tracking. The project highlights core concepts in **robotics, embedded systems, and control engineering**, combining both hardware and software design.
-
----
-
-## 🚀 Key Features
-- 🧭 **Autonomous trajectory following** using IR sensors  
-- ⚙️ **Real-time motor control** for smooth motion  
-- 📊 **PD control algorithm** for improved stability and accuracy  
-- 🧠 **Embedded decision-making** based on sensor feedback  
-- 🛠️ **Mechanical design** modeled using SOLIDWORKS  
+Each project is organized in a **dedicated folder** and demonstrates a different aspect of robotic system design, ranging from **real-time control** to **computer vision and autonomous behavior**.
 
 ---
 
-## 🧠 System Architecture
+## 📂 Projects Included
 
-### 🔧 Hardware Components
-- 1× **Arduino Mega ADK**  
-- 1× **Battery holder**  
-- 3× **Batteries**  
-- 5× **IR sensors**  
-- 1× **L298N dual H-bridge motor driver**  
-- 2× **DC motors (12V, 130 RPM)**  
-- **Plastic wheels**
+### 🚗 1. All-Terrain Robot (ESP32)
+An all-terrain mobile robot based on an **ESP32 microcontroller**, controlled in real time via a **PS3 Bluetooth controller**.  
+Focuses on wireless control, motor driving, and rugged mechanical design.
 
-### 💻 Software Components
-- Arduino embedded firmware  
-- PD (Proportional–Derivative) control algorithm  
-- Sensor data acquisition and filtering  
-- Motor speed and direction control  
+**Technologies:** ESP32 · Bluetooth · Robotics · Embedded Systems
+
+📁 Folder: `all terrain robot`
 
 ---
 
-## ⚙️ How It Works
-1. IR sensors detect the contrast between the line and the surface  
-2. Sensor data is processed by the Arduino in real time  
-3. The PD controller calculates correction values  
-4. Motor speeds are adjusted accordingly  
-5. The robot follows the line smoothly and accurately  
-Component List
+### 🧭 2. Line Follower Robot (Arduino)
+An autonomous robot capable of following a predefined trajectory using **infrared sensors** and a **PD control algorithm**.  
+Demonstrates real-time sensor processing and closed-loop motor control.
+
+**Technologies:** Arduino · IR Sensors · PD Control · PROTEUS · SOLIDWORKS
+
+📁 Folder: `line follower `
+
+---
+
+### ⚔️ 3. Fighter Robot (STM32 / Hoverboard)
+A combat-oriented robot built using the **original hoverboard motherboard (STM32-based)**.  
+The original firmware was **modified and adapted** to enable RC-based control and high-torque motor operation.
+
+**Technologies:** STM32 · Hoverboard Controller · RC Remote · Motor Control · Robotics
+
+📁 Folder: `fighter robot`
+
+---
+
+### 📷 4. Surveillance Robot (ESP32-CAM + AI)
+A surveillance robot designed for **real-time object detection and tracking** using an **ESP32-CAM** and **YOLOv3**.  
+Combines embedded systems with computer vision and mechanical design.
+
+**Technologies:** ESP32-CAM · YOLOv3 · Arduino IDE · SolidWorks · Robotics
+
+📁 Folder: `surveillance robot`
+
+---
+
+## 🧠 Skills Demonstrated
+- Embedded systems programming (ESP32, STM32, Arduino)
+- Motor control & power management
+- Wireless communication (Bluetooth, RC)
+- Autonomous robotics & control algorithms
+- Computer vision & AI integration
+- Mechanical design & 3D modeling
+- System integration & debugging
+
+---
+
+## 👤 Author
+**Med Khalil**  
+Mechatronics Engineer  
+Robotics · Embedded Systems · IoT · AI · PCB Designer
+
+---
+
+## 📌 Notes
+Each project folder contains its own detailed `README.md` describing:
+- Project objectives
+- Hardware & software architecture
+- Control logic
+- Tools and technologies used
