@@ -1,19 +1,31 @@
 # 🤖 Fighter Robot (Combat Robot)
 
 ## 📌 Project Overview
-This project focuses on the **design and programming of a combat (fighter) robot** based on an **STM32 microcontroller**. The robot uses a **hoverboard (overboard) motor and wheel system as its main drive core**, providing **high torque, robustness, and stability** required for combat robotics.
+This project focuses on the **design and programming of a combat (fighter) robot** using the **original hoverboard (overboard) motherboard**, which is based on an **STM32 microcontroller**. Instead of designing a custom control board from scratch, the existing hoverboard controller was **reprogrammed and adapted** to meet the specific requirements of a combat robot.
 
-The system integrates **motor control, power management, and remote operation via an RC controller**, ensuring fast response and reliable maneuverability during aggressive movements.
+The robot integrates **motor control, power management, and remote operation via an RC controller**, delivering high torque, fast response, and robustness suitable for competitive robotic environments.
+
+---
+
+## 🧠 Hoverboard Controller Adaptation
+The hoverboard motherboard originally designed for self-balancing operation was **repurposed for robotic combat use**:
+
+- The **original STM32 firmware was modified** to disable self-balancing logic  
+- Custom code was developed to allow **direct motor speed and direction control**  
+- RC controller inputs were integrated to replace hoverboard sensor feedback  
+- Safety and power constraints were adjusted to handle aggressive maneuvers  
+
+This process required **low-level embedded programming**, signal analysis, and a deep understanding of the hoverboard control architecture.
 
 ---
 
 ## 🚀 Key Features
 - ⚔️ **Combat-oriented robotic platform**
-- 🛞 **Hoverboard (overboard) motor & wheel system** for high torque drive
+- 🛞 **Hoverboard motors & wheels** as the main drive system
 - 🎮 **Remote control via RC transmitter**
-- ⚡ **STM32-based architecture** for real-time performance
-- 🔄 **Efficient motor control** for powerful and precise motion
-- 🔋 **Integrated power management system**
+- ⚡ **STM32-based hoverboard motherboard**
+- 🔄 **Custom-modified motor control firmware**
+- 🔋 **Integrated power management**
 - 🛠️ **Robust and modular mechanical design**
 
 ---
@@ -21,23 +33,31 @@ The system integrates **motor control, power management, and remote operation vi
 ## 🧠 System Architecture
 
 ### 🔧 Hardware Components
-- STM32F103RCT6 microcontroller  
-- Hoverboard (overboard) motors and wheels  
+- Hoverboard motherboard (STM32-based)  
+- Hoverboard motors and wheels  
 - RC receiver & transmitter  
 - Power management and regulation circuits  
 - Combat robot chassis  
 
 ### 💻 Software Components
-- STM32 firmware development  
-- Motor control algorithms  
-- RC signal decoding and processing  
-- Peripheral configuration using STM32Cube tools  
+- Modified STM32 firmware for robotic control  
+- Motor control algorithms adapted from hoverboard logic  
+- RC signal decoding and command mapping  
+- STM32Cube tools for flashing and debugging  
 
 ---
 
 ## ⚙️ How It Works
-1. The RC controller sends commands to the robot  
-2. The RC receiver receives and decodes control signals  
-3. The STM32 processes inputs in real time  
-4. Motor control algorithms drive the hoverboard motors  
-5. Power management ensures stable and safe operation during combat 
+1. RC controller sends motion commands  
+2. RC receiver decodes and forwards signals to the STM32  
+3. Custom firmware processes RC inputs  
+4. Modified motor control logic drives hoverboard motors  
+5. Power management ensures stable operation under high load  
+
+---
+
+## ⚠️ Project Note – Code Availability
+Due to an unexpected **data loss on the development laptop**, a significant portion of the original firmware and experimental code was deleted.  
+Currently, **only three core source files remain available** in this repository.
+
+Despite this limitation, the remaining files reflect the **core control logic and system adaptation**, and the project documentation explains the overall architecture and development approach.
